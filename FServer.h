@@ -61,12 +61,12 @@ class FServer
 		int unregisterSubsystemsNow();
 		int setRun(const int runnumber);
 		static FServer *__instance;
-		std::vector<FNode*> topNodes;
 
 		int runnumber;
 		int eventnumber;
 
-		std::map<std::string, FNode *> topnodemap;
+		std::map<std::string, FNode *> TopNodeMap;
+		std::vector <FSubSystems*> Subsystems;
 };
 
 #endif
